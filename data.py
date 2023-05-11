@@ -9,3 +9,6 @@ lulusan=st.text_input("Tahun Lulusan")
 bekerja=st.text_input("Bekerja")
 
 send=st.button("Kirim")
+
+if send:
+    st.success("Terkirim")
