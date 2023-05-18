@@ -21,25 +21,18 @@ while True:
         "Bekerja": bekerja
     }
 
-
     # Add the data entry to the list of entries if the user clicks the "Kirim" button
     if st.button("Kirim"):
         data_entries.append(data_entry)
         st.success("Terkirim")
-        
-     # Ask the user if they want to enter another data entry
-    if not st.button("Tambah Data Lagi"):
+
+    # Ask the user if they want to enter another data entry
+    if not st.write("Terima Kasih"):
         break
-        
-   
-           
-        
-        
+
 # Display the table with all of the data entries
 if data_entries:
     st.write("Data Karir Mahasiswa:")
-    st.table(data_entries)   
+    st.table(data_entries)
 else:
     st.write("Belum ada data yang dimasukkan.")
-    
-    
